@@ -1,0 +1,58 @@
+//The Font
+@import "Font";
+//The Color
+@import "Color";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: Vazir;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+
+}
+.backGround-Vue{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+
+    // The img Vue
+    .img-Vue{
+      width: 100%;
+      height:100%;
+      background: url(../img/VueImg.webp);
+      background-size: cover;
+      background-position: center center;
+
+    }
+    // The img Cover
+    .page-Update{
+        width: 100%;
+        height: 100vh;
+        background:linear-gradient(#2e2e2e9f,#00cc88bb);
+    } 
+    //The Title Cover
+    .text-Update{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+
+        //The Text
+        .title-Update{
+            color: var(--First);
+            font-size: 1.4rem;
+        }
+        //The loader
+        @import "Loader";
+        
+    }
+}
